@@ -1,0 +1,8 @@
+catalogcontroller catalogitem 0.5
+catalogitem catalogcontroller 0.5
+orderitem catalogitem 0.33
+catalogitem orderitem 0.33
+orderitem ordercontroller 0.5
+ordercontroller orderitem 0.5
+shippingmodel shippingcontroller 1
+shippingcontroller shippingmodel 1
