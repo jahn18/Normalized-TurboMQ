@@ -1,0 +1,7 @@
+contain 0 catalogcontroller
+contain 0 catalogitem
+contain 1 orderitem
+contain 1 ordercontroller
+contain 1 shippingmodel
+contain 1 shippingcontroller
+contain 1 utility

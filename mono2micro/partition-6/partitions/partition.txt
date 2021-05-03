@@ -1,0 +1,36 @@
+AppInsightsFilter,partition1
+Utility,partition1
+OrderingConfiguration,partition1
+SimpleCORSFilter,partition1
+DealerController,partition4
+RepositoryFactory,partition1
+RepositoryFactory::Repositories,partition1
+MongoDealersRepository,partition4
+MongoOperationsWithRetry,partition1
+Dealer,partition4
+DealerInfo,partition4
+QuoteController,partition1
+MongoQuoteRepository,partition1
+QuoteDetails,partition1
+QuoteItemInfo [Duplicate_#001],partition1
+Quote [Duplicate_#001],partition1
+OrderUpdateInfo,partition3
+OrderEventInfo,partition3
+OrderController,partition3
+MongoOrderRepository,partition3
+OrderDetails,partition3
+Order [Duplicate_#001],partition3
+CatalogController,partition5
+MongoCatalogItemsRepository,partition5
+CatalogItem [Duplicate_#002],partition5
+CatalogItem [Duplicate_#001],partition5
+ShipmentRecord [Duplicate_#001],partition2
+ShipmentEventInfo [Duplicate_#001],partition2
+DeliveryAddress [Duplicate_#001],partition2
+PhoneInfo [Duplicate_#001],partition2
+ShipmentController,partition2
+MongoShipmentRepository,partition2
+ShipmentDetails,partition2
+BadRequestException,partition0
+ConflictingRequestException,partition0
+OrderingInitializer,partition0

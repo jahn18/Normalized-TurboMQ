@@ -10,16 +10,20 @@ public class RSFParser {
 	private ArrayList<ArrayList<String>> clusteredItems;
 	private HashMap<String, Integer> name2ID;
 	private int totalItemCount;
-	private boolean dsm[][];
+	private double dsm[][];
 	
 	public ArrayList<ArrayList<String>> getClusteredItems() {
 		return clusteredItems;
 	}
 		
-	public int dependency(String e1, String e2) {
-		int sum = 0;
-		if(dsm[name2ID.get(e1)][name2ID.get(e2)]) sum++;
-		if(dsm[name2ID.get(e2)][name2ID.get(e1)]) sum++;
+	public double dependency(String e1, String e2) {
+		double sum = 0;
+		if(dsm[name2ID.get(e1)][name2ID.get(e2)] != 0) {
+			sum += dsm[name2ID.get(e1)][name2ID.get(e2)];
+		}
+		if(dsm[name2ID.get(e2)][name2ID.get(e1)] != 0) {
+			sum += dsm[name2ID.get(e2)][name2ID.get(e1)];
+		}
 		return sum;
 	}
 
@@ -31,7 +35,7 @@ public class RSFParser {
 		
 		parseClusteringInputFile(filename);
 		
-		dsm = new boolean[totalItemCount][totalItemCount];
+		dsm = new double[totalItemCount][totalItemCount];
 	}
 
 	private void parseClusteringInputFile(String filename) {
@@ -74,12 +78,16 @@ public class RSFParser {
 			 BufferedReader reader = new BufferedReader(new FileReader(f));
 			 String readLine = "";
 			 String itemName = "";
-			 
-			 while ((readLine = reader.readLine()) != null) {
+			 String itemName2 = "";
+			 String dependencyValue = "";
+
+			while ((readLine = reader.readLine()) != null) {
 				 StringTokenizer tokenizer = new StringTokenizer(readLine); 
-				 tokenizer.nextToken(); // depends
+				 //tokenizer.nextToken(); // depends
 				 itemName = tokenizer.nextToken();
-				 dsm[name2ID.get(itemName)][name2ID.get(tokenizer.nextToken())] = true;
+				 itemName2 = tokenizer.nextToken();
+				 dependencyValue = tokenizer.nextToken();
+				 dsm[name2ID.get(itemName)][name2ID.get(itemName2)] = Double.parseDouble(dependencyValue);
 			 }
 			 reader.close();
 		} catch (IOException e) {

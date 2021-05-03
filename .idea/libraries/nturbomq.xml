@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nturbomq">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/nturbomq.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
