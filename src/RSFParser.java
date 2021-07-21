@@ -47,6 +47,7 @@ public class RSFParser {
 			 String currentCluster = "";
 			 String itemName = "";
 			 int clusterCount = 0;
+			 ArrayList<String> clusters = new ArrayList<>();
 			 
 			 while ((readLine = reader.readLine()) != null) {
 				 StringTokenizer tokenizer = new StringTokenizer(readLine); 
@@ -54,8 +55,8 @@ public class RSFParser {
 				 tokenizer.nextToken(); // contains
 				 
 				 clusterName = tokenizer.nextToken();
-				 if(!currentCluster.equals(clusterName)) {
-					 currentCluster = clusterName;
+				 if(!clusters.contains(clusterName)) {
+				     clusters.add(clusterName);
 					 clusterCount++;
 					 clusteredItems.add(new ArrayList<String>());	 
 				 } 
@@ -88,7 +89,8 @@ public class RSFParser {
 				 itemName2 = tokenizer.nextToken();
 				 dependencyValue = tokenizer.nextToken();
 				 dsm[name2ID.get(itemName)][name2ID.get(itemName2)] = Double.parseDouble(dependencyValue);
-			 }
+				 //dsm[name2ID.get(itemName)][name2ID.get(itemName2)] = 1;
+			}
 			 reader.close();
 		} catch (IOException e) {
 			System.out.println("Error while reading an input file!");

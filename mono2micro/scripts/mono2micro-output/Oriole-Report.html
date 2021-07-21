@@ -1,0 +1,3373 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Language" content="en-us">
+<style type="text/css">a {text-decoration: none}</style>
+<style type="text/css">a:hover {text-decoration: underline}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="expires" content="0">
+<title> Mono2Micro Partition Business Use Case Analysis - Application   </title>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/carbon-components/css/carbon-components.min.css">
+<script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
+ 
+
+<style>  
+	.report_title { 
+	  padding-top: 2%;
+	  padding-bottom: 1%;
+	  display: block;
+	  overflow: hidden; 
+	  font-size: 30px;
+	  color: black;
+	  position: relative;
+  	  left: 10%;
+	  font-weight: bolder;	  
+	}
+
+	.collapsible {  
+	  cursor: pointer; 
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  border: none;
+	  text-align: left;
+	  outline: none; 
+	  font-size: 20px;  
+	  position: relative;
+  	  left: 25%;	
+	} 
+
+
+	.summary {  
+	  background-color: whitesmoke;
+	  color: black;
+	  cursor: pointer; 
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  border: none;
+	  text-align: left;
+	  outline: none; 
+	  font-size: 20px;  
+	  position: relative;
+  	  left: 25%;	
+	}
+
+	.jclass {  
+	  display: list-item;
+	  overflow: hidden; 
+	  font-size: 15px;
+	  color: black;
+	  position: relative;   
+	  font-weight: bold;
+	}
+
+	.jfunction {  
+	  display: list-item;
+	  overflow: hidden; 
+	  font-size: 15px;
+	  color: black;
+	  position: relative;  
+	  padding-left: 2%;  
+	}	
+
+	.partition_header{   
+	  background-color: whitesmoke;
+	  color: black;
+	  cursor: pointer;
+	  padding-left: 2%;
+	  padding-top: 15px;
+	  padding-bottom: 15px;
+	  width: 80%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 20px;
+	  font-weight: bold;  
+	  position: relative;
+  	  left: 10%;
+	}	
+
+	.summary_title{     
+	  cursor: pointer; 
+	  padding-top: 15px;
+	  padding-bottom: 15px;  
+	  text-align: left;  
+	  font-size: 20px;
+	  
+	}	
+
+	.extra {
+		background-color: #e6ecff;
+		color: black;
+
+	}
+
+	.arrow { 
+		color: black;
+	}
+</style>
+
+</head>
+
+<body>
+
+	<div>
+		<h1 class="report_title"> Mono2Micro Business Use Case Partition Analysis - Application </h1> 
+		<br>
+	</div>  
+
+	<div class="bx--row">
+		<div class="bx--col bx--col-lg-8">
+		  <div class="bx--tile  partition_header"> <h4> Summary </h4> </div>
+		</div>
+	</div>
+	 
+ 
+	<ul data-accordion class="bx--accordion bx--col-lg-8">
+		<li data-accordion-item class="bx--accordion__item collapsible">
+			<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+				<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+				<div class="bx--accordion__title "> Business Use Cases per Partition </div>
+			</button>
+
+			<div id="pane1" class="bx--accordion__content">
+			<br>  
+				<section class="bx--structured-list" >
+					<div class="bx--structured-list-thead">
+						<div class="bx--structured-list-row bx--structured-list-row--header-row">
+							<div class="bx--structured-list-th">Partition Name</div>
+							<div class="bx--structured-list-th"># of Classes </div>
+							<div class="bx--structured-list-th"># of Business Use Cases</div>
+							<div class="bx--structured-list-th">Business Use Cases</div>
+						</div>
+					</div>
+				 
+					<div class="bx--structured-list-tbody">
+
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#partition1"> partition1 </a></div>
+							<div class="bx--structured-list-td"> 3 </div>
+							<div class="bx--structured-list-td"> 3 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> dealers-add-dealer </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-change-delivery-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> quotes-create-order </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#partition4"> partition4 </a></div>
+							<div class="bx--structured-list-td"> 4 </div>
+							<div class="bx--structured-list-td"> 8 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> catalog-add-item </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> catalog-change-item </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> catalog-delete-item </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> catalog-view </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-delivery-manage-events </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-order-manage-events </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-manage-extras-on-order </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-order-manage-event </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#partition3"> partition3 </a></div>
+							<div class="bx--structured-list-td"> 6 </div>
+							<div class="bx--structured-list-td"> 14 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-change-delivery-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-change-order-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-view </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> delivery-change-dealer-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> delivery-change-item-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> delivery-delete-delivery </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-change-dealer-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-change-order </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-create-delivery </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-update-item-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-view </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-view-change-order </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> quotes-create-order </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> Unknown </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#partition2"> partition2 </a></div>
+							<div class="bx--structured-list-td"> 7 </div>
+							<div class="bx--structured-list-td"> 7 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-change-delivery-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-change-order-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-view </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> delivery-change-dealer-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> delivery-change-item-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> delivery-delete-delivery </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-create-delivery </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#partition0"> partition0 </a></div>
+							<div class="bx--structured-list-td"> 15 </div>
+							<div class="bx--structured-list-td"> 32 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> catalog-add-item </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> catalog-change-item </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> catalog-delete-item </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> catalog-view </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> dealers-add-dealer </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> dealers-change-contact-info (unique to this partition) </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> dealers-delete-dealer (unique to this partition) </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> dealers-save-info (unique to this partition) </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> dealers-view (unique to this partition) </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-change-delivery-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-change-order-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-delivery-manage-events </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-order-manage-events </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> deliveries-view </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> delivery-change-dealer-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> delivery-change-item-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> delivery-delete-delivery </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-change-dealer-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-change-order </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-create-delivery </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-manage-extras-on-order </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-order-manage-event </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-update-item-info </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-view </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> orders-view-change-order </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> quotes-add (unique to this partition) </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> quotes-change-quote (unique to this partition) </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> quotes-create-order </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> quotes-create-quote (unique to this partition) </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> quotes-delete-quote (unique to this partition) </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> quotes-view (unique to this partition) </li>
+									
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> Unknown </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						 
+						<div class="bx--structured-list-row">
+						 
+							<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> <a href="#Unobserved"> Unobserved </a></div>
+							<div class="bx--structured-list-td"> 56 </div>
+							<div class="bx--structured-list-td"> 1 </div>
+							<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested">
+									
+										<li class="bx--list__item"> Unobserved </li>
+									
+								</ul>
+								
+							</div>
+ 
+						</div>
+						
+
+					</div>
+				</section>
+			</div>
+		</li>
+	</ul>
+ 
+   
+
+	 
+
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="partition0"> <h4> partition0 </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<!-- example cluster section 1  
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title "> Classes membership ( 15 ) </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						 
+						<div class="bx--structured-list-tbody">
+							
+
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> AppInsightsFilter </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> Dealer </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> DealerController </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> DealerInfo </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MongoDealersRepository </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MongoOperationsWithRetry </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MongoQuoteRepository </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> OrderingConfiguration </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> Quote [Duplicate_#001] </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> QuoteController </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> QuoteDetails </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> QuoteItemInfo [Duplicate_#001] </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> RepositoryFactory </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> SimpleCORSFilter </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> Utility </li>
+								</ul>
+								
+								</div> 
+							</div> 
+
+						</div>
+					</section>
+				</div> 
+			</li>-->
+
+		 
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 15 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> DealerController  </div>
+								<div class="bx--structured-list-td"> 5 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> dealers-add-dealer </li>
+								
+									<li class="jfunction"> dealers-change-contact-info </li>
+								
+									<li class="jfunction"> dealers-delete-dealer </li>
+								
+									<li class="jfunction"> dealers-save-info </li>
+								
+									<li class="jfunction"> dealers-view </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> DealerInfo  </div>
+								<div class="bx--structured-list-td"> 14 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> dealers-add-dealer </li>
+								
+									<li class="jfunction"> dealers-change-contact-info </li>
+								
+									<li class="jfunction"> dealers-save-info </li>
+								
+									<li class="jfunction"> dealers-view </li>
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MongoDealersRepository  </div>
+								<div class="bx--structured-list-td"> 15 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> dealers-add-dealer </li>
+								
+									<li class="jfunction"> dealers-change-contact-info </li>
+								
+									<li class="jfunction"> dealers-delete-dealer </li>
+								
+									<li class="jfunction"> dealers-save-info </li>
+								
+									<li class="jfunction"> dealers-view </li>
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> Dealer  </div>
+								<div class="bx--structured-list-td"> 15 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> dealers-add-dealer </li>
+								
+									<li class="jfunction"> dealers-change-contact-info </li>
+								
+									<li class="jfunction"> dealers-delete-dealer </li>
+								
+									<li class="jfunction"> dealers-save-info </li>
+								
+									<li class="jfunction"> dealers-view </li>
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> QuoteController  </div>
+								<div class="bx--structured-list-td"> 16 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> quotes-delete-quote </li>
+								
+									<li class="jfunction"> quotes-view </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MongoQuoteRepository  </div>
+								<div class="bx--structured-list-td"> 16 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> quotes-delete-quote </li>
+								
+									<li class="jfunction"> quotes-view </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> QuoteDetails  </div>
+								<div class="bx--structured-list-td"> 16 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> quotes-delete-quote </li>
+								
+									<li class="jfunction"> quotes-view </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> QuoteItemInfo [Duplicate_#001]  </div>
+								<div class="bx--structured-list-td"> 16 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> quotes-delete-quote </li>
+								
+									<li class="jfunction"> quotes-view </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> Quote [Duplicate_#001]  </div>
+								<div class="bx--structured-list-td"> 18 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-add </li>
+								
+									<li class="jfunction"> quotes-change-quote </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> quotes-create-quote </li>
+								
+									<li class="jfunction"> quotes-view </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> RepositoryFactory  </div>
+								<div class="bx--structured-list-td"> 28 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> catalog-change-item </li>
+								
+									<li class="jfunction"> catalog-delete-item </li>
+								
+									<li class="jfunction"> catalog-view </li>
+								
+									<li class="jfunction"> dealers-add-dealer </li>
+								
+									<li class="jfunction"> dealers-change-contact-info </li>
+								
+									<li class="jfunction"> dealers-delete-dealer </li>
+								
+									<li class="jfunction"> dealers-save-info </li>
+								
+									<li class="jfunction"> dealers-view </li>
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-delivery-manage-events </li>
+								
+									<li class="jfunction"> deliveries-order-manage-events </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-manage-extras-on-order </li>
+								
+									<li class="jfunction"> orders-order-manage-event </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> quotes-delete-quote </li>
+								
+									<li class="jfunction"> quotes-view </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MongoOperationsWithRetry  </div>
+								<div class="bx--structured-list-td"> 28 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> catalog-change-item </li>
+								
+									<li class="jfunction"> catalog-delete-item </li>
+								
+									<li class="jfunction"> catalog-view </li>
+								
+									<li class="jfunction"> dealers-add-dealer </li>
+								
+									<li class="jfunction"> dealers-change-contact-info </li>
+								
+									<li class="jfunction"> dealers-delete-dealer </li>
+								
+									<li class="jfunction"> dealers-save-info </li>
+								
+									<li class="jfunction"> dealers-view </li>
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-delivery-manage-events </li>
+								
+									<li class="jfunction"> deliveries-order-manage-events </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-manage-extras-on-order </li>
+								
+									<li class="jfunction"> orders-order-manage-event </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> quotes-delete-quote </li>
+								
+									<li class="jfunction"> quotes-view </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> AppInsightsFilter  </div>
+								<div class="bx--structured-list-td"> 32 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> catalog-add-item </li>
+								
+									<li class="jfunction"> catalog-change-item </li>
+								
+									<li class="jfunction"> catalog-delete-item </li>
+								
+									<li class="jfunction"> catalog-view </li>
+								
+									<li class="jfunction"> dealers-add-dealer </li>
+								
+									<li class="jfunction"> dealers-change-contact-info </li>
+								
+									<li class="jfunction"> dealers-delete-dealer </li>
+								
+									<li class="jfunction"> dealers-save-info </li>
+								
+									<li class="jfunction"> dealers-view </li>
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-delivery-manage-events </li>
+								
+									<li class="jfunction"> deliveries-order-manage-events </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-manage-extras-on-order </li>
+								
+									<li class="jfunction"> orders-order-manage-event </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-add </li>
+								
+									<li class="jfunction"> quotes-change-quote </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> quotes-create-quote </li>
+								
+									<li class="jfunction"> quotes-delete-quote </li>
+								
+									<li class="jfunction"> quotes-view </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> Utility  </div>
+								<div class="bx--structured-list-td"> 32 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> catalog-add-item </li>
+								
+									<li class="jfunction"> catalog-change-item </li>
+								
+									<li class="jfunction"> catalog-delete-item </li>
+								
+									<li class="jfunction"> catalog-view </li>
+								
+									<li class="jfunction"> dealers-add-dealer </li>
+								
+									<li class="jfunction"> dealers-change-contact-info </li>
+								
+									<li class="jfunction"> dealers-delete-dealer </li>
+								
+									<li class="jfunction"> dealers-save-info </li>
+								
+									<li class="jfunction"> dealers-view </li>
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-delivery-manage-events </li>
+								
+									<li class="jfunction"> deliveries-order-manage-events </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-manage-extras-on-order </li>
+								
+									<li class="jfunction"> orders-order-manage-event </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-add </li>
+								
+									<li class="jfunction"> quotes-change-quote </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> quotes-create-quote </li>
+								
+									<li class="jfunction"> quotes-delete-quote </li>
+								
+									<li class="jfunction"> quotes-view </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderingConfiguration  </div>
+								<div class="bx--structured-list-td"> 32 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> catalog-add-item </li>
+								
+									<li class="jfunction"> catalog-change-item </li>
+								
+									<li class="jfunction"> catalog-delete-item </li>
+								
+									<li class="jfunction"> catalog-view </li>
+								
+									<li class="jfunction"> dealers-add-dealer </li>
+								
+									<li class="jfunction"> dealers-change-contact-info </li>
+								
+									<li class="jfunction"> dealers-delete-dealer </li>
+								
+									<li class="jfunction"> dealers-save-info </li>
+								
+									<li class="jfunction"> dealers-view </li>
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-delivery-manage-events </li>
+								
+									<li class="jfunction"> deliveries-order-manage-events </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-manage-extras-on-order </li>
+								
+									<li class="jfunction"> orders-order-manage-event </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-add </li>
+								
+									<li class="jfunction"> quotes-change-quote </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> quotes-create-quote </li>
+								
+									<li class="jfunction"> quotes-delete-quote </li>
+								
+									<li class="jfunction"> quotes-view </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> SimpleCORSFilter  </div>
+								<div class="bx--structured-list-td"> 32 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> catalog-add-item </li>
+								
+									<li class="jfunction"> catalog-change-item </li>
+								
+									<li class="jfunction"> catalog-delete-item </li>
+								
+									<li class="jfunction"> catalog-view </li>
+								
+									<li class="jfunction"> dealers-add-dealer </li>
+								
+									<li class="jfunction"> dealers-change-contact-info </li>
+								
+									<li class="jfunction"> dealers-delete-dealer </li>
+								
+									<li class="jfunction"> dealers-save-info </li>
+								
+									<li class="jfunction"> dealers-view </li>
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-delivery-manage-events </li>
+								
+									<li class="jfunction"> deliveries-order-manage-events </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-manage-extras-on-order </li>
+								
+									<li class="jfunction"> orders-order-manage-event </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-add </li>
+								
+									<li class="jfunction"> quotes-change-quote </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> quotes-create-quote </li>
+								
+									<li class="jfunction"> quotes-delete-quote </li>
+								
+									<li class="jfunction"> quotes-view </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="partition1"> <h4> partition1 </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<!-- example cluster section 1  
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title "> Classes membership ( 3 ) </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						 
+						<div class="bx--structured-list-tbody">
+							
+
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> BadRequestException </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ConflictingRequestException </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> OrderingInitializer </li>
+								</ul>
+								
+								</div> 
+							</div> 
+
+						</div>
+					</section>
+				</div> 
+			</li>-->
+
+		 
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 3 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> BadRequestException  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ConflictingRequestException  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderingInitializer  </div>
+								<div class="bx--structured-list-td"> 2 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> dealers-add-dealer </li>
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="partition2"> <h4> partition2 </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<!-- example cluster section 1  
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title "> Classes membership ( 7 ) </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						 
+						<div class="bx--structured-list-tbody">
+							
+
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> DeliveryAddress [Duplicate_#001] </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MongoShipmentRepository </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> PhoneInfo [Duplicate_#001] </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ShipmentController </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ShipmentDetails </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ShipmentEventInfo [Duplicate_#001] </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ShipmentRecord [Duplicate_#001] </li>
+								</ul>
+								
+								</div> 
+							</div> 
+
+						</div>
+					</section>
+				</div> 
+			</li>-->
+
+		 
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 7 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ShipmentEventInfo [Duplicate_#001]  </div>
+								<div class="bx--structured-list-td"> 4 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ShipmentRecord [Duplicate_#001]  </div>
+								<div class="bx--structured-list-td"> 7 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> DeliveryAddress [Duplicate_#001]  </div>
+								<div class="bx--structured-list-td"> 7 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PhoneInfo [Duplicate_#001]  </div>
+								<div class="bx--structured-list-td"> 7 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ShipmentController  </div>
+								<div class="bx--structured-list-td"> 7 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MongoShipmentRepository  </div>
+								<div class="bx--structured-list-td"> 7 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ShipmentDetails  </div>
+								<div class="bx--structured-list-td"> 7 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="partition3"> <h4> partition3 </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<!-- example cluster section 1  
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title "> Classes membership ( 6 ) </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						 
+						<div class="bx--structured-list-tbody">
+							
+
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MongoOrderRepository </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> Order [Duplicate_#001] </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> OrderController </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> OrderDetails </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> OrderEventInfo </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> OrderUpdateInfo </li>
+								</ul>
+								
+								</div> 
+							</div> 
+
+						</div>
+					</section>
+				</div> 
+			</li>-->
+
+		 
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 6 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderUpdateInfo  </div>
+								<div class="bx--structured-list-td"> 6 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderEventInfo  </div>
+								<div class="bx--structured-list-td"> 13 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderController  </div>
+								<div class="bx--structured-list-td"> 14 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MongoOrderRepository  </div>
+								<div class="bx--structured-list-td"> 14 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderDetails  </div>
+								<div class="bx--structured-list-td"> 14 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> Order [Duplicate_#001]  </div>
+								<div class="bx--structured-list-td"> 14 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> deliveries-change-delivery-info </li>
+								
+									<li class="jfunction"> deliveries-change-order-info </li>
+								
+									<li class="jfunction"> deliveries-view </li>
+								
+									<li class="jfunction"> delivery-change-dealer-info </li>
+								
+									<li class="jfunction"> delivery-change-item-info </li>
+								
+									<li class="jfunction"> delivery-delete-delivery </li>
+								
+									<li class="jfunction"> orders-change-dealer-info </li>
+								
+									<li class="jfunction"> orders-change-order </li>
+								
+									<li class="jfunction"> orders-create-delivery </li>
+								
+									<li class="jfunction"> orders-update-item-info </li>
+								
+									<li class="jfunction"> orders-view </li>
+								
+									<li class="jfunction"> orders-view-change-order </li>
+								
+									<li class="jfunction"> quotes-create-order </li>
+								
+									<li class="jfunction"> Unknown </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="partition4"> <h4> partition4 </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<!-- example cluster section 1  
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title "> Classes membership ( 4 ) </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						 
+						<div class="bx--structured-list-tbody">
+							
+
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> CatalogController </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> CatalogItem [Duplicate_#001] </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> CatalogItem [Duplicate_#002] </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MongoCatalogItemsRepository </li>
+								</ul>
+								
+								</div> 
+							</div> 
+
+						</div>
+					</section>
+				</div> 
+			</li>-->
+
+		 
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 4 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> CatalogItem [Duplicate_#001]  </div>
+								<div class="bx--structured-list-td"> 7 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> catalog-add-item </li>
+								
+									<li class="jfunction"> catalog-change-item </li>
+								
+									<li class="jfunction"> catalog-view </li>
+								
+									<li class="jfunction"> deliveries-delivery-manage-events </li>
+								
+									<li class="jfunction"> deliveries-order-manage-events </li>
+								
+									<li class="jfunction"> orders-manage-extras-on-order </li>
+								
+									<li class="jfunction"> orders-order-manage-event </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> CatalogController  </div>
+								<div class="bx--structured-list-td"> 7 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> catalog-change-item </li>
+								
+									<li class="jfunction"> catalog-delete-item </li>
+								
+									<li class="jfunction"> catalog-view </li>
+								
+									<li class="jfunction"> deliveries-delivery-manage-events </li>
+								
+									<li class="jfunction"> deliveries-order-manage-events </li>
+								
+									<li class="jfunction"> orders-manage-extras-on-order </li>
+								
+									<li class="jfunction"> orders-order-manage-event </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MongoCatalogItemsRepository  </div>
+								<div class="bx--structured-list-td"> 7 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> catalog-change-item </li>
+								
+									<li class="jfunction"> catalog-delete-item </li>
+								
+									<li class="jfunction"> catalog-view </li>
+								
+									<li class="jfunction"> deliveries-delivery-manage-events </li>
+								
+									<li class="jfunction"> deliveries-order-manage-events </li>
+								
+									<li class="jfunction"> orders-manage-extras-on-order </li>
+								
+									<li class="jfunction"> orders-order-manage-event </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> CatalogItem [Duplicate_#002]  </div>
+								<div class="bx--structured-list-td"> 7 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> catalog-change-item </li>
+								
+									<li class="jfunction"> catalog-delete-item </li>
+								
+									<li class="jfunction"> catalog-view </li>
+								
+									<li class="jfunction"> deliveries-delivery-manage-events </li>
+								
+									<li class="jfunction"> deliveries-order-manage-events </li>
+								
+									<li class="jfunction"> orders-manage-extras-on-order </li>
+								
+									<li class="jfunction"> orders-order-manage-event </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	 
+		<div class="bx--row">
+			<div class="bx--col bx--col-lg-8">
+			  <div class="bx--tile  partition_header" id="Unobserved"> <h4> Unobserved </h4> </div>
+			</div>
+		</div>
+
+		<ul data-accordion class="bx--accordion bx--col-lg-8">
+
+			<!-- example cluster section 1  
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title "> Classes membership ( 56 ) </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						 
+						<div class="bx--structured-list-tbody">
+							
+
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td">
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> CatalogControllerTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> CatalogItem </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> CatalogItemsRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ConfigurationHelpers </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ConfigurationManager </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ConfigurationRule </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> Constants </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> CreateOrderProcessTask </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> DealerControllerTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> DealersRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> Delivery </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> DeliveryAddress </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> Main </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MockCatalogItemsRepository </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MockCatalogItemsRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MockDealersRepository </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MockDealersRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MockOrderRepository </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MockOrderRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MockQuoteRepository </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MockQuoteRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MockShipmentRepository </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MockShipmentRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MongoCatalogItemsRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MongoDBProperties </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MongoDealersRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MongoOrderRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MongoQuoteRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MongoShipmentRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> MrpConnectService </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> Order </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> OrderControllerTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> OrderingServiceProperties </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> OrderItem </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> OrderMessage </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> OrderRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> PhoneInfo </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> PingController </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> PostgresqlProperties </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ProductItem </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ProductMessage </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> PropertyHelper </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> QueueFactory </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> QueueResponse </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> QueueService </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> Quote </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> QuoteControllerTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> QuoteItemInfo </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> QuoteRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ShipmentControllerTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ShipmentEventInfo </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ShipmentRecord </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> ShipmentRepositoryTest </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> TestOrderingConfiguration </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> UpdateProductProcessTask </li>
+								</ul>
+								 
+								 
+								<ul class="bx--list--unordered bx--list--nested"> 
+									<li class="bx--list__item jclass"> UtilityTest </li>
+								</ul>
+								
+								</div> 
+							</div> 
+
+						</div>
+					</section>
+				</div> 
+			</li>-->
+
+		 
+
+			<li data-accordion-item class="bx--accordion__item collapsible">
+				<button class="bx--accordion__heading extra" aria-expanded="false" aria-controls="pane1">
+					<svg focusable="false" preserveAspectRatio="xMidYMid meet" style="will-change: transform;" xmlns="http://www.w3.org/2000/svg" class="bx--accordion__arrow arrow" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M11 8L6 13 5.3 12.3 9.6 8 5.3 3.7 6 3z"></path></svg>
+					<div class="bx--accordion__title ">  Member Class Details ( 56 )  </div>
+				</button>
+				<div id="pane1" class="bx--accordion__content">
+					<br>  
+					<section class="bx--structured-list" class="tab"> 
+						<div class="bx--structured-list-thead">
+							<div class="bx--structured-list-row bx--structured-list-row--header-row">
+								<div class="bx--structured-list-th">Class Name</div>
+								<div class="bx--structured-list-th"># of Business Use Cases</div>
+								<div class="bx--structured-list-th">Business Use Cases</div>
+							</div>
+						</div>
+
+						<div class="bx--structured-list-tbody">
+							
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> Constants  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> Main  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ConfigurationHelpers  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ConfigurationManager  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> QueueResponse  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> CatalogItem  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> DeliveryAddress  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> Order  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PhoneInfo  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> Quote  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> QuoteItemInfo  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ShipmentEventInfo  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ShipmentRecord  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderItem  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderMessage  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ProductItem  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ProductMessage  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> CreateOrderProcessTask  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> UpdateProductProcessTask  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MrpConnectService  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> QueueFactory  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> QueueService  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MongoDBProperties  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderingServiceProperties  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PostgresqlProperties  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PropertyHelper  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> PingController  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> Delivery  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MockCatalogItemsRepository  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MockDealersRepository  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MockOrderRepository  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MockQuoteRepository  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MockShipmentRepository  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ConfigurationRule  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> TestOrderingConfiguration  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> UtilityTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> CatalogControllerTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> DealerControllerTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderControllerTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> QuoteControllerTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ShipmentControllerTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> CatalogItemsRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> DealersRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> OrderRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> QuoteRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> ShipmentRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MockCatalogItemsRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MockDealersRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MockOrderRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MockQuoteRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MockShipmentRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MongoCatalogItemsRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MongoDealersRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MongoOrderRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MongoQuoteRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							 
+							<div class="bx--structured-list-row">
+								<div class="bx--structured-list-td bx--structured-list-content--nowrap jclass"> MongoShipmentRepositoryTest  </div>
+								<div class="bx--structured-list-td"> 1 </div>
+								<div class="bx--structured-list-td">
+								
+									<li class="jfunction"> Unobserved </li>
+								
+								</div>
+								 
+							</div>
+							
+							  
+						</div>
+					</section>
+				</div>
+			</li> 
+		</ul> 
+	
+ 
+</body>
+</html>
+
+
+ 

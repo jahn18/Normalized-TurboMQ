@@ -1,0 +1,2392 @@
+{
+    "version": "v2.0.0r8",
+    "cardinal_modified": {
+        "nodes": [
+            {
+                "name": "AppInsightsFilter",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/AppInsightsFilter.java",
+                "semantics": [
+                    "dealers-view",
+                    "dealers-save-info",
+                    "quotes-delete-quote",
+                    "Unknown",
+                    "quotes-create-quote",
+                    "quotes-create-order",
+                    "orders-view",
+                    "orders-change-order",
+                    "orders-manage-extras-on-order",
+                    "orders-view-change-order",
+                    "orders-create-delivery",
+                    "deliveries-change-order-info",
+                    "delivery-change-dealer-info",
+                    "delivery-change-item-info",
+                    "delivery-delete-delivery",
+                    "deliveries-view",
+                    "catalog-add-item",
+                    "orders-order-manage-event",
+                    "deliveries-change-delivery-info",
+                    "catalog-delete-item",
+                    "dealers-change-contact-info",
+                    "quotes-view",
+                    "orders-update-item-info",
+                    "deliveries-order-manage-events",
+                    "catalog-view",
+                    "dealers-add-dealer",
+                    "quotes-add",
+                    "dealers-delete-dealer",
+                    "orders-change-dealer-info",
+                    "deliveries-delivery-manage-events",
+                    "catalog-change-item",
+                    "quotes-change-quote"
+                ]
+            },
+            {
+                "name": "Utility",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/Utility.java",
+                "semantics": [
+                    "dealers-view",
+                    "dealers-save-info",
+                    "quotes-delete-quote",
+                    "Unknown",
+                    "quotes-create-quote",
+                    "quotes-create-order",
+                    "orders-view",
+                    "orders-change-order",
+                    "orders-manage-extras-on-order",
+                    "orders-view-change-order",
+                    "orders-create-delivery",
+                    "deliveries-change-order-info",
+                    "delivery-change-dealer-info",
+                    "delivery-change-item-info",
+                    "delivery-delete-delivery",
+                    "deliveries-view",
+                    "catalog-add-item",
+                    "orders-order-manage-event",
+                    "deliveries-change-delivery-info",
+                    "catalog-delete-item",
+                    "dealers-change-contact-info",
+                    "quotes-view",
+                    "orders-update-item-info",
+                    "deliveries-order-manage-events",
+                    "catalog-view",
+                    "dealers-add-dealer",
+                    "quotes-add",
+                    "dealers-delete-dealer",
+                    "orders-change-dealer-info",
+                    "deliveries-delivery-manage-events",
+                    "catalog-change-item",
+                    "quotes-change-quote"
+                ]
+            },
+            {
+                "name": "OrderingConfiguration",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/OrderingConfiguration.java",
+                "semantics": [
+                    "dealers-view",
+                    "dealers-save-info",
+                    "quotes-delete-quote",
+                    "Unknown",
+                    "quotes-create-quote",
+                    "quotes-create-order",
+                    "orders-view",
+                    "orders-change-order",
+                    "orders-manage-extras-on-order",
+                    "orders-view-change-order",
+                    "orders-create-delivery",
+                    "deliveries-change-order-info",
+                    "delivery-change-dealer-info",
+                    "delivery-change-item-info",
+                    "delivery-delete-delivery",
+                    "deliveries-view",
+                    "catalog-add-item",
+                    "orders-order-manage-event",
+                    "deliveries-change-delivery-info",
+                    "catalog-delete-item",
+                    "dealers-change-contact-info",
+                    "quotes-view",
+                    "orders-update-item-info",
+                    "deliveries-order-manage-events",
+                    "catalog-view",
+                    "dealers-add-dealer",
+                    "quotes-add",
+                    "dealers-delete-dealer",
+                    "orders-change-dealer-info",
+                    "deliveries-delivery-manage-events",
+                    "catalog-change-item",
+                    "quotes-change-quote"
+                ]
+            },
+            {
+                "name": "SimpleCORSFilter",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/SimpleCORSFilter.java",
+                "semantics": [
+                    "dealers-view",
+                    "dealers-save-info",
+                    "quotes-delete-quote",
+                    "Unknown",
+                    "quotes-create-quote",
+                    "quotes-create-order",
+                    "orders-view",
+                    "orders-change-order",
+                    "orders-manage-extras-on-order",
+                    "orders-view-change-order",
+                    "orders-create-delivery",
+                    "deliveries-change-order-info",
+                    "delivery-change-dealer-info",
+                    "delivery-change-item-info",
+                    "delivery-delete-delivery",
+                    "deliveries-view",
+                    "catalog-add-item",
+                    "orders-order-manage-event",
+                    "deliveries-change-delivery-info",
+                    "catalog-delete-item",
+                    "dealers-change-contact-info",
+                    "quotes-view",
+                    "orders-update-item-info",
+                    "deliveries-order-manage-events",
+                    "catalog-view",
+                    "dealers-add-dealer",
+                    "quotes-add",
+                    "dealers-delete-dealer",
+                    "orders-change-dealer-info",
+                    "deliveries-delivery-manage-events",
+                    "catalog-change-item",
+                    "quotes-change-quote"
+                ]
+            },
+            {
+                "name": "DealerController",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/controllers/DealerController.java",
+                "semantics": [
+                    "dealers-view",
+                    "dealers-save-info",
+                    "dealers-change-contact-info",
+                    "dealers-delete-dealer",
+                    "dealers-add-dealer"
+                ]
+            },
+            {
+                "name": "RepositoryFactory",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/RepositoryFactory.java",
+                "semantics": [
+                    "dealers-view",
+                    "dealers-save-info",
+                    "quotes-delete-quote",
+                    "Unknown",
+                    "quotes-create-order",
+                    "orders-change-order",
+                    "orders-manage-extras-on-order",
+                    "orders-view",
+                    "orders-view-change-order",
+                    "orders-create-delivery",
+                    "deliveries-change-order-info",
+                    "delivery-change-dealer-info",
+                    "delivery-change-item-info",
+                    "delivery-delete-delivery",
+                    "deliveries-view",
+                    "catalog-delete-item",
+                    "dealers-change-contact-info",
+                    "quotes-view",
+                    "deliveries-change-delivery-info",
+                    "deliveries-order-manage-events",
+                    "catalog-view",
+                    "orders-update-item-info",
+                    "orders-change-dealer-info",
+                    "orders-order-manage-event",
+                    "dealers-delete-dealer",
+                    "deliveries-delivery-manage-events",
+                    "catalog-change-item",
+                    "dealers-add-dealer"
+                ]
+            },
+            {
+                "name": "MongoDealersRepository",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mongodb/MongoDealersRepository.java",
+                "semantics": [
+                    "dealers-view",
+                    "dealers-save-info",
+                    "orders-view-change-order",
+                    "orders-change-order",
+                    "delivery-delete-delivery",
+                    "dealers-change-contact-info",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "orders-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "dealers-delete-dealer",
+                    "orders-update-item-info",
+                    "dealers-add-dealer",
+                    "orders-change-dealer-info"
+                ]
+            },
+            {
+                "name": "MongoOperationsWithRetry",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mongodb/MongoOperationsWithRetry.java",
+                "semantics": [
+                    "dealers-view",
+                    "dealers-save-info",
+                    "quotes-delete-quote",
+                    "Unknown",
+                    "quotes-create-order",
+                    "orders-change-order",
+                    "orders-manage-extras-on-order",
+                    "orders-view",
+                    "orders-view-change-order",
+                    "orders-create-delivery",
+                    "deliveries-change-order-info",
+                    "delivery-change-dealer-info",
+                    "delivery-change-item-info",
+                    "delivery-delete-delivery",
+                    "deliveries-view",
+                    "catalog-delete-item",
+                    "dealers-change-contact-info",
+                    "quotes-view",
+                    "deliveries-change-delivery-info",
+                    "deliveries-order-manage-events",
+                    "catalog-view",
+                    "orders-update-item-info",
+                    "orders-change-dealer-info",
+                    "orders-order-manage-event",
+                    "dealers-delete-dealer",
+                    "deliveries-delivery-manage-events",
+                    "catalog-change-item",
+                    "dealers-add-dealer"
+                ]
+            },
+            {
+                "name": "Dealer",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mongodb/models/Dealer.java",
+                "semantics": [
+                    "dealers-view",
+                    "dealers-save-info",
+                    "orders-view-change-order",
+                    "orders-change-order",
+                    "delivery-delete-delivery",
+                    "dealers-change-contact-info",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "orders-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "dealers-delete-dealer",
+                    "orders-update-item-info",
+                    "dealers-add-dealer",
+                    "orders-change-dealer-info"
+                ]
+            },
+            {
+                "name": "DealerInfo",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/models/DealerInfo.java",
+                "semantics": [
+                    "dealers-view",
+                    "dealers-save-info",
+                    "orders-view-change-order",
+                    "orders-change-order",
+                    "delivery-delete-delivery",
+                    "dealers-change-contact-info",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "orders-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "orders-update-item-info",
+                    "dealers-add-dealer",
+                    "orders-change-dealer-info"
+                ]
+            },
+            {
+                "name": "QuoteController",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/controllers/QuoteController.java",
+                "semantics": [
+                    "quotes-delete-quote",
+                    "Unknown",
+                    "quotes-create-order",
+                    "orders-view-change-order",
+                    "orders-change-order",
+                    "orders-create-delivery",
+                    "delivery-delete-delivery",
+                    "orders-view",
+                    "deliveries-view",
+                    "quotes-view",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "orders-update-item-info",
+                    "orders-change-dealer-info"
+                ]
+            },
+            {
+                "name": "MongoQuoteRepository",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mongodb/MongoQuoteRepository.java",
+                "semantics": [
+                    "quotes-delete-quote",
+                    "Unknown",
+                    "quotes-create-order",
+                    "orders-view-change-order",
+                    "orders-change-order",
+                    "orders-create-delivery",
+                    "delivery-delete-delivery",
+                    "orders-view",
+                    "deliveries-view",
+                    "quotes-view",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "orders-update-item-info",
+                    "orders-change-dealer-info"
+                ]
+            },
+            {
+                "name": "QuoteDetails",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mongodb/models/QuoteDetails.java",
+                "semantics": [
+                    "quotes-delete-quote",
+                    "Unknown",
+                    "quotes-create-order",
+                    "orders-view-change-order",
+                    "orders-change-order",
+                    "orders-create-delivery",
+                    "delivery-delete-delivery",
+                    "orders-view",
+                    "deliveries-view",
+                    "quotes-view",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "orders-update-item-info",
+                    "orders-change-dealer-info"
+                ]
+            },
+            {
+                "name": "QuoteItemInfo [Duplicate_#001]",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/models/QuoteItemInfo.java",
+                "semantics": [
+                    "quotes-delete-quote",
+                    "Unknown",
+                    "quotes-create-order",
+                    "orders-view-change-order",
+                    "orders-change-order",
+                    "orders-create-delivery",
+                    "delivery-delete-delivery",
+                    "orders-view",
+                    "deliveries-view",
+                    "quotes-view",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "orders-update-item-info",
+                    "orders-change-dealer-info"
+                ]
+            },
+            {
+                "name": "Quote [Duplicate_#001]",
+                "group": 0,
+                "category": "partition0",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/models/Quote.java",
+                "semantics": [
+                    "Unknown",
+                    "quotes-create-quote",
+                    "quotes-create-order",
+                    "orders-view-change-order",
+                    "orders-change-order",
+                    "orders-create-delivery",
+                    "delivery-delete-delivery",
+                    "orders-view",
+                    "deliveries-view",
+                    "quotes-view",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "quotes-add",
+                    "orders-update-item-info",
+                    "quotes-change-quote",
+                    "orders-change-dealer-info"
+                ]
+            },
+            {
+                "name": "OrderUpdateInfo",
+                "group": 1,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/models/OrderUpdateInfo.java",
+                "semantics": [
+                    "orders-change-order",
+                    "orders-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "orders-view-change-order",
+                    "delivery-change-dealer-info"
+                ]
+            },
+            {
+                "name": "OrderEventInfo",
+                "group": 1,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/models/OrderEventInfo.java",
+                "semantics": [
+                    "orders-change-order",
+                    "orders-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "deliveries-view",
+                    "orders-create-delivery",
+                    "orders-view-change-order",
+                    "orders-update-item-info",
+                    "orders-change-dealer-info",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "delivery-delete-delivery",
+                    "Unknown"
+                ]
+            },
+            {
+                "name": "OrderController",
+                "group": 1,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/controllers/OrderController.java",
+                "semantics": [
+                    "orders-change-order",
+                    "orders-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "deliveries-view",
+                    "quotes-create-order",
+                    "orders-create-delivery",
+                    "orders-view-change-order",
+                    "orders-update-item-info",
+                    "orders-change-dealer-info",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "delivery-delete-delivery",
+                    "Unknown"
+                ]
+            },
+            {
+                "name": "MongoOrderRepository",
+                "group": 1,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mongodb/MongoOrderRepository.java",
+                "semantics": [
+                    "orders-change-order",
+                    "orders-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "deliveries-view",
+                    "quotes-create-order",
+                    "orders-create-delivery",
+                    "orders-view-change-order",
+                    "orders-update-item-info",
+                    "orders-change-dealer-info",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "delivery-delete-delivery",
+                    "Unknown"
+                ]
+            },
+            {
+                "name": "OrderDetails",
+                "group": 1,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mongodb/models/OrderDetails.java",
+                "semantics": [
+                    "orders-change-order",
+                    "orders-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "deliveries-view",
+                    "quotes-create-order",
+                    "orders-create-delivery",
+                    "orders-view-change-order",
+                    "orders-update-item-info",
+                    "orders-change-dealer-info",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "delivery-delete-delivery",
+                    "Unknown"
+                ]
+            },
+            {
+                "name": "Order [Duplicate_#001]",
+                "group": 1,
+                "category": "partition3",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/models/Order.java",
+                "semantics": [
+                    "orders-change-order",
+                    "orders-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "deliveries-view",
+                    "quotes-create-order",
+                    "orders-create-delivery",
+                    "orders-view-change-order",
+                    "orders-update-item-info",
+                    "orders-change-dealer-info",
+                    "deliveries-change-delivery-info",
+                    "delivery-change-dealer-info",
+                    "delivery-delete-delivery",
+                    "Unknown"
+                ]
+            },
+            {
+                "name": "CatalogController",
+                "group": 2,
+                "category": "partition4",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/controllers/CatalogController.java",
+                "semantics": [
+                    "orders-manage-extras-on-order",
+                    "catalog-delete-item",
+                    "deliveries-order-manage-events",
+                    "catalog-view",
+                    "orders-order-manage-event",
+                    "deliveries-delivery-manage-events",
+                    "catalog-change-item"
+                ]
+            },
+            {
+                "name": "MongoCatalogItemsRepository",
+                "group": 2,
+                "category": "partition4",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mongodb/MongoCatalogItemsRepository.java",
+                "semantics": [
+                    "orders-manage-extras-on-order",
+                    "catalog-delete-item",
+                    "deliveries-order-manage-events",
+                    "catalog-view",
+                    "orders-order-manage-event",
+                    "deliveries-delivery-manage-events",
+                    "catalog-change-item"
+                ]
+            },
+            {
+                "name": "CatalogItem [Duplicate_#002]",
+                "group": 2,
+                "category": "partition4",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mongodb/models/CatalogItem.java",
+                "semantics": [
+                    "orders-manage-extras-on-order",
+                    "catalog-delete-item",
+                    "deliveries-order-manage-events",
+                    "catalog-view",
+                    "orders-order-manage-event",
+                    "deliveries-delivery-manage-events",
+                    "catalog-change-item"
+                ]
+            },
+            {
+                "name": "CatalogItem [Duplicate_#001]",
+                "group": 2,
+                "category": "partition4",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/models/CatalogItem.java",
+                "semantics": [
+                    "orders-manage-extras-on-order",
+                    "catalog-add-item",
+                    "deliveries-order-manage-events",
+                    "catalog-view",
+                    "orders-order-manage-event",
+                    "deliveries-delivery-manage-events",
+                    "catalog-change-item"
+                ]
+            },
+            {
+                "name": "ShipmentRecord [Duplicate_#001]",
+                "group": 3,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/models/ShipmentRecord.java",
+                "semantics": [
+                    "delivery-change-dealer-info",
+                    "delivery-delete-delivery",
+                    "deliveries-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "orders-create-delivery",
+                    "deliveries-change-delivery-info"
+                ]
+            },
+            {
+                "name": "ShipmentEventInfo [Duplicate_#001]",
+                "group": 3,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/models/ShipmentEventInfo.java",
+                "semantics": [
+                    "delivery-change-dealer-info",
+                    "deliveries-view",
+                    "delivery-change-item-info",
+                    "orders-create-delivery"
+                ]
+            },
+            {
+                "name": "DeliveryAddress [Duplicate_#001]",
+                "group": 3,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/models/DeliveryAddress.java",
+                "semantics": [
+                    "delivery-change-dealer-info",
+                    "delivery-delete-delivery",
+                    "deliveries-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "orders-create-delivery",
+                    "deliveries-change-delivery-info"
+                ]
+            },
+            {
+                "name": "PhoneInfo [Duplicate_#001]",
+                "group": 3,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/models/PhoneInfo.java",
+                "semantics": [
+                    "delivery-change-dealer-info",
+                    "delivery-delete-delivery",
+                    "deliveries-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "orders-create-delivery",
+                    "deliveries-change-delivery-info"
+                ]
+            },
+            {
+                "name": "ShipmentController",
+                "group": 3,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/controllers/ShipmentController.java",
+                "semantics": [
+                    "delivery-change-dealer-info",
+                    "delivery-delete-delivery",
+                    "deliveries-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "orders-create-delivery",
+                    "deliveries-change-delivery-info"
+                ]
+            },
+            {
+                "name": "MongoShipmentRepository",
+                "group": 3,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mongodb/MongoShipmentRepository.java",
+                "semantics": [
+                    "delivery-change-dealer-info",
+                    "delivery-delete-delivery",
+                    "deliveries-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "orders-create-delivery",
+                    "deliveries-change-delivery-info"
+                ]
+            },
+            {
+                "name": "ShipmentDetails",
+                "group": 3,
+                "category": "partition2",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mongodb/models/ShipmentDetails.java",
+                "semantics": [
+                    "delivery-change-dealer-info",
+                    "delivery-delete-delivery",
+                    "deliveries-view",
+                    "deliveries-change-order-info",
+                    "delivery-change-item-info",
+                    "orders-create-delivery",
+                    "deliveries-change-delivery-info"
+                ]
+            },
+            {
+                "name": "BadRequestException",
+                "group": 4,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/BadRequestException.java",
+                "semantics": [
+                    "quotes-create-order"
+                ]
+            },
+            {
+                "name": "ConflictingRequestException",
+                "group": 4,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/ConflictingRequestException.java",
+                "semantics": [
+                    "quotes-create-order"
+                ]
+            },
+            {
+                "name": "OrderingInitializer",
+                "group": 4,
+                "category": "partition1",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/OrderingInitializer.java",
+                "semantics": [
+                    "dealers-add-dealer",
+                    "deliveries-change-delivery-info"
+                ]
+            },
+            {
+                "name": "Constants",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/Constants.java",
+                "semantics": []
+            },
+            {
+                "name": "Main",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/Main.java",
+                "semantics": []
+            },
+            {
+                "name": "ConfigurationHelpers",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/infrastructure/ConfigurationHelpers.java",
+                "semantics": []
+            },
+            {
+                "name": "ConfigurationManager",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/infrastructure/ConfigurationManager.java",
+                "semantics": []
+            },
+            {
+                "name": "QueueResponse",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/QueueResponse.java",
+                "semantics": []
+            },
+            {
+                "name": "CatalogItem",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/mrp/CatalogItem.java",
+                "semantics": []
+            },
+            {
+                "name": "DeliveryAddress",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/mrp/DeliveryAddress.java",
+                "semantics": []
+            },
+            {
+                "name": "Order",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/mrp/Order.java",
+                "semantics": []
+            },
+            {
+                "name": "PhoneInfo",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/mrp/PhoneInfo.java",
+                "semantics": []
+            },
+            {
+                "name": "Quote",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/mrp/Quote.java",
+                "semantics": []
+            },
+            {
+                "name": "QuoteItemInfo",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/mrp/QuoteItemInfo.java",
+                "semantics": []
+            },
+            {
+                "name": "ShipmentEventInfo",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/mrp/ShipmentEventInfo.java",
+                "semantics": []
+            },
+            {
+                "name": "ShipmentRecord",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/mrp/ShipmentRecord.java",
+                "semantics": []
+            },
+            {
+                "name": "OrderItem",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/website/OrderItem.java",
+                "semantics": []
+            },
+            {
+                "name": "OrderMessage",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/website/OrderMessage.java",
+                "semantics": []
+            },
+            {
+                "name": "ProductItem",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/website/ProductItem.java",
+                "semantics": []
+            },
+            {
+                "name": "ProductMessage",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/models/website/ProductMessage.java",
+                "semantics": []
+            },
+            {
+                "name": "CreateOrderProcessTask",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/scheduled/CreateOrderProcessTask.java",
+                "semantics": []
+            },
+            {
+                "name": "UpdateProductProcessTask",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/scheduled/UpdateProductProcessTask.java",
+                "semantics": []
+            },
+            {
+                "name": "MrpConnectService",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/services/MrpConnectService.java",
+                "semantics": []
+            },
+            {
+                "name": "QueueFactory",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/services/QueueFactory.java",
+                "semantics": []
+            },
+            {
+                "name": "QueueService",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/IntegrationService/src/main/java/integration/services/QueueService.java",
+                "semantics": []
+            },
+            {
+                "name": "MongoDBProperties",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/MongoDBProperties.java",
+                "semantics": []
+            },
+            {
+                "name": "OrderingServiceProperties",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/OrderingServiceProperties.java",
+                "semantics": []
+            },
+            {
+                "name": "PostgresqlProperties",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/PostgresqlProperties.java",
+                "semantics": []
+            },
+            {
+                "name": "PropertyHelper",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/PropertyHelper.java",
+                "semantics": []
+            },
+            {
+                "name": "PingController",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/controllers/PingController.java",
+                "semantics": []
+            },
+            {
+                "name": "Delivery",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/models/Delivery.java",
+                "semantics": []
+            },
+            {
+                "name": "MockCatalogItemsRepository",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mock/MockCatalogItemsRepository.java",
+                "semantics": []
+            },
+            {
+                "name": "MockDealersRepository",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mock/MockDealersRepository.java",
+                "semantics": []
+            },
+            {
+                "name": "MockOrderRepository",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mock/MockOrderRepository.java",
+                "semantics": []
+            },
+            {
+                "name": "MockQuoteRepository",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mock/MockQuoteRepository.java",
+                "semantics": []
+            },
+            {
+                "name": "MockShipmentRepository",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/main/java/smpl/ordering/repositories/mock/MockShipmentRepository.java",
+                "semantics": []
+            },
+            {
+                "name": "ConfigurationRule",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/ConfigurationRule.java",
+                "semantics": []
+            },
+            {
+                "name": "TestOrderingConfiguration",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/TestOrderingConfiguration.java",
+                "semantics": []
+            },
+            {
+                "name": "UtilityTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/UtilityTest.java",
+                "semantics": []
+            },
+            {
+                "name": "CatalogControllerTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/controllers/CatalogControllerTest.java",
+                "semantics": []
+            },
+            {
+                "name": "DealerControllerTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/controllers/DealerControllerTest.java",
+                "semantics": []
+            },
+            {
+                "name": "OrderControllerTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/controllers/OrderControllerTest.java",
+                "semantics": []
+            },
+            {
+                "name": "QuoteControllerTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/controllers/QuoteControllerTest.java",
+                "semantics": []
+            },
+            {
+                "name": "ShipmentControllerTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/controllers/ShipmentControllerTest.java",
+                "semantics": []
+            },
+            {
+                "name": "CatalogItemsRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/CatalogItemsRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "DealersRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/DealersRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "OrderRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/OrderRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "QuoteRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/QuoteRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "ShipmentRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/ShipmentRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "MockCatalogItemsRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mock/test/MockCatalogItemsRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "MockDealersRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mock/test/MockDealersRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "MockOrderRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mock/test/MockOrderRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "MockQuoteRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mock/test/MockQuoteRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "MockShipmentRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mock/test/MockShipmentRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "MongoCatalogItemsRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoCatalogItemsRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "MongoDealersRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoDealersRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "MongoOrderRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoOrderRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "MongoQuoteRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoQuoteRepositoryTest.java",
+                "semantics": []
+            },
+            {
+                "name": "MongoShipmentRepositoryTest",
+                "group": 5,
+                "category": "Unobserved",
+                "construct": "Class",
+                "FQCN": "",
+                "filepath": "Class, PartsUnlimitedMRP/src/Backend/OrderService/src/test/java/smpl/ordering/repositories/mongodb/test/MongoShipmentRepositoryTest.java",
+                "semantics": []
+            }
+        ],
+        "links": [
+            {
+                "source": "AppInsightsFilter",
+                "target": "Utility",
+                "method": {
+                    "getTelemetryClient": 244,
+                    "isNullOrEmpty": 244
+                },
+                "value": 7.19
+            },
+            {
+                "source": "AppInsightsFilter",
+                "target": "SimpleCORSFilter",
+                "method": {
+                    "doFilter": 244
+                },
+                "value": 6.497
+            },
+            {
+                "source": "Utility",
+                "target": "OrderingConfiguration",
+                "method": {
+                    "getApplicationContext": 427
+                },
+                "value": 7.056
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "DealerController",
+                "method": {
+                    "getDealers": 1,
+                    "updateDealer": 2,
+                    "removeDealer": 2,
+                    "addDealer": 1
+                },
+                "value": 2.791
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "DealerInfo",
+                "method": {
+                    "getName": 8,
+                    "getContact": 8,
+                    "getAddress": 8,
+                    "getEmail": 8,
+                    "getPhone": 8,
+                    "DealerInfo [overloaded_#001]": 3,
+                    "setName": 3,
+                    "setContact": 3,
+                    "setAddress": 3,
+                    "setEmail": 3,
+                    "setPhone": 3
+                },
+                "value": 5.06
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "QuoteController",
+                "method": {
+                    "deleteQuote": 1,
+                    "getQuoteById": 34,
+                    "updateQuote": 12,
+                    "getQuotesByCustomerName": 2
+                },
+                "value": 4.891
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "Quote [Duplicate_#001]",
+                "method": {
+                    "getQuoteId": 51,
+                    "getValidUntil": 51,
+                    "getCustomerName": 51,
+                    "getDealerName": 51,
+                    "getQuoteItems": 51,
+                    "getTotalCost": 51,
+                    "getDiscount": 51,
+                    "getCity": 51,
+                    "getPostalCode": 51,
+                    "getState": 51,
+                    "Quote [overloaded_#001]": 21,
+                    "setQuoteId": 21,
+                    "setValidUntil": 21,
+                    "setCustomerName": 21,
+                    "setDealerName": 21,
+                    "setQuoteItems": 12,
+                    "setTotalCost": 12,
+                    "setDiscount": 12,
+                    "setCity": 12,
+                    "setPostalCode": 12,
+                    "setState": 12
+                },
+                "value": 7.532
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "QuoteItemInfo [Duplicate_#001]",
+                "method": {
+                    "getSkuNumber": 130,
+                    "getAmount": 130,
+                    "QuoteItemInfo [overloaded_#001]": 34,
+                    "setSkuNumber": 34,
+                    "setAmount": 34
+                },
+                "value": 6.891
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "OrderUpdateInfo",
+                "method": {
+                    "OrderUpdateInfo [overloaded_#001]": 8,
+                    "setStatus": 8,
+                    "setEventInfo": 8
+                },
+                "value": 4.178
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "OrderEventInfo",
+                "method": {
+                    "OrderEventInfo [overloaded_#001]": 56,
+                    "setDate": 56,
+                    "setComments": 56,
+                    "getDate": 78,
+                    "getComments": 78
+                },
+                "value": 6.78
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "OrderController",
+                "method": {
+                    "updateStatus": 8,
+                    "getOrderById": 14,
+                    "getOrdersByDealerName": 3,
+                    "updateOrder": 12,
+                    "createOrder": 2
+                },
+                "value": 4.663
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "CatalogController",
+                "method": {
+                    "getCatalogItems": 6,
+                    "removeCatalogItem": 2,
+                    "upsertCatalogItem": 1
+                },
+                "value": 3.197
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "CatalogItem [Duplicate_#001]",
+                "method": {
+                    "getSkuNumber": 324,
+                    "getDescription": 324,
+                    "getPrice": 324,
+                    "getInventory": 324,
+                    "getLeadTime": 324,
+                    "CatalogItem [overloaded_#001]": 2,
+                    "setSkuNumber": 2,
+                    "setDescription": 2,
+                    "setPrice": 1,
+                    "setInventory": 1,
+                    "setLeadTime": 1
+                },
+                "value": 8.395
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "ShipmentRecord [Duplicate_#001]",
+                "method": {
+                    "ShipmentRecord [overloaded_#003]": 5,
+                    "setOrderId": 5,
+                    "setDeliveryDate": 5,
+                    "setDeliveryAddress": 5,
+                    "setContactName": 5,
+                    "setPrimaryContactPhone": 5,
+                    "setAlternateContactPhone": 5,
+                    "getOrderId": 9,
+                    "getDeliveryDate": 9,
+                    "getEvents": 9,
+                    "getDeliveryAddress": 9,
+                    "getContactName": 9,
+                    "getPrimaryContactPhone": 9,
+                    "getAlternateContactPhone": 9
+                },
+                "value": 5.584
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "ShipmentEventInfo [Duplicate_#001]",
+                "method": {
+                    "ShipmentEventInfo [overloaded_#001]": 4,
+                    "setDate": 4,
+                    "setComments": 4,
+                    "getDate": 8,
+                    "getComments": 8
+                },
+                "value": 4.332
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "DeliveryAddress [Duplicate_#001]",
+                "method": {
+                    "DeliveryAddress [overloaded_#002]": 5,
+                    "setStreet": 5,
+                    "setCity": 5,
+                    "setState": 5,
+                    "setPostalCode": 5,
+                    "setSpecialInstructions": 5,
+                    "getStreet": 9,
+                    "getCity": 9,
+                    "getState": 9,
+                    "getPostalCode": 9,
+                    "getSpecialInstructions": 9
+                },
+                "value": 5.317
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "PhoneInfo [Duplicate_#001]",
+                "method": {
+                    "PhoneInfo [overloaded_#001]": 9,
+                    "setPhoneNumber": 9,
+                    "setKind": 9,
+                    "getPhoneNumber": 14,
+                    "getKind": 14
+                },
+                "value": 5.007
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "ShipmentController",
+                "method": {
+                    "createShipmentRecord": 4,
+                    "updateShipment": 1,
+                    "getShipments": 2,
+                    "deleteShipment": 2
+                },
+                "value": 3.197
+            },
+            {
+                "source": "SimpleCORSFilter",
+                "target": "Order [Duplicate_#001]",
+                "method": {
+                    "getOrderId": 33,
+                    "getQuoteId": 33,
+                    "getOrderDate": 33,
+                    "getStatus": 33,
+                    "getEvents": 33,
+                    "Order": 12,
+                    "setOrderId": 12,
+                    "setQuoteId": 12,
+                    "setOrderDate": 12,
+                    "setStatus": 12,
+                    "setEvents": 12
+                },
+                "value": 6.468
+            },
+            {
+                "source": "DealerController",
+                "target": "RepositoryFactory",
+                "method": {
+                    "getDealersRepository": 9
+                },
+                "value": 3.197
+            },
+            {
+                "source": "DealerController",
+                "target": "MongoDealersRepository",
+                "method": {
+                    "getDealers": 1,
+                    "getDealer": 3,
+                    "upsertDealer": 3,
+                    "removeDealer": 2
+                },
+                "value": 3.197
+            },
+            {
+                "source": "DealerController",
+                "target": "DealerInfo",
+                "method": {
+                    "validate": 3,
+                    "getName": 2
+                },
+                "value": 2.609
+            },
+            {
+                "source": "DealerController",
+                "target": "OrderingInitializer",
+                "method": {
+                    "getApplicationPath": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "MongoDealersRepository",
+                "target": "MongoOperationsWithRetry",
+                "method": {
+                    "findAll [overloaded_#0017]": 1,
+                    "findOne [overloaded_#0031]": 18,
+                    "save [overloaded_#0052]": 3,
+                    "findAndRemove [overloaded_#0044]": 2
+                },
+                "value": 4.178
+            },
+            {
+                "source": "MongoDealersRepository",
+                "target": "Dealer",
+                "method": {
+                    "toDealerInfo": 22,
+                    "Dealer [overloaded_#002]": 3,
+                    "getId": 2,
+                    "setId": 2
+                },
+                "value": 4.367
+            },
+            {
+                "source": "MongoDealersRepository",
+                "target": "DealerInfo",
+                "method": {
+                    "getName": 3
+                },
+                "value": 2.098
+            },
+            {
+                "source": "MongoOperationsWithRetry",
+                "target": "Dealer",
+                "method": {
+                    "Dealer [overloaded_#001]": 26
+                },
+                "value": 4.258
+            },
+            {
+                "source": "MongoOperationsWithRetry",
+                "target": "Utility",
+                "method": {
+                    "getTelemetryClient": 183
+                },
+                "value": 6.209
+            },
+            {
+                "source": "MongoOperationsWithRetry",
+                "target": "QuoteDetails",
+                "method": {
+                    "QuoteDetails [overloaded_#001]": 68
+                },
+                "value": 5.219
+            },
+            {
+                "source": "MongoOperationsWithRetry",
+                "target": "QuoteItemInfo [Duplicate_#001]",
+                "method": {
+                    "QuoteItemInfo [overloaded_#001]": 173
+                },
+                "value": 6.153
+            },
+            {
+                "source": "MongoOperationsWithRetry",
+                "target": "OrderDetails",
+                "method": {
+                    "OrderDetails [overloaded_#001]": 70
+                },
+                "value": 5.248
+            },
+            {
+                "source": "MongoOperationsWithRetry",
+                "target": "OrderEventInfo",
+                "method": {
+                    "OrderEventInfo [overloaded_#001]": 183
+                },
+                "value": 6.209
+            },
+            {
+                "source": "MongoOperationsWithRetry",
+                "target": "CatalogItem [Duplicate_#002]",
+                "method": {
+                    "CatalogItem [overloaded_#001]": 328
+                },
+                "value": 6.793
+            },
+            {
+                "source": "MongoOperationsWithRetry",
+                "target": "ShipmentDetails",
+                "method": {
+                    "ShipmentDetails [overloaded_#001]": 16
+                },
+                "value": 3.772
+            },
+            {
+                "source": "MongoOperationsWithRetry",
+                "target": "DeliveryAddress [Duplicate_#001]",
+                "method": {
+                    "DeliveryAddress [overloaded_#002]": 16
+                },
+                "value": 3.772
+            },
+            {
+                "source": "MongoOperationsWithRetry",
+                "target": "PhoneInfo [Duplicate_#001]",
+                "method": {
+                    "PhoneInfo [overloaded_#001]": 24
+                },
+                "value": 4.178
+            },
+            {
+                "source": "MongoOperationsWithRetry",
+                "target": "ShipmentEventInfo [Duplicate_#001]",
+                "method": {
+                    "ShipmentEventInfo [overloaded_#001]": 8
+                },
+                "value": 3.079
+            },
+            {
+                "source": "Dealer",
+                "target": "DealerInfo",
+                "method": {
+                    "DealerInfo [overloaded_#001]": 22,
+                    "setName": 22,
+                    "setContact": 22,
+                    "setAddress": 22,
+                    "setEmail": 22,
+                    "setPhone": 22,
+                    "getName": 3,
+                    "getContact": 3,
+                    "getAddress": 3,
+                    "getEmail": 3,
+                    "getPhone": 3
+                },
+                "value": 5.99
+            },
+            {
+                "source": "DealerInfo",
+                "target": "Utility",
+                "method": {
+                    "validateStringField": 3
+                },
+                "value": 2.098
+            },
+            {
+                "source": "QuoteController",
+                "target": "RepositoryFactory",
+                "method": {
+                    "getQuoteRepository": 49
+                },
+                "value": 4.891
+            },
+            {
+                "source": "QuoteController",
+                "target": "MongoQuoteRepository",
+                "method": {
+                    "removeQuote": 1,
+                    "getQuote": 34,
+                    "updateQuote": 12,
+                    "getQuotesByCustomerName": 2
+                },
+                "value": 4.891
+            },
+            {
+                "source": "QuoteController",
+                "target": "Quote [Duplicate_#001]",
+                "method": {
+                    "validate": 12
+                },
+                "value": 3.484
+            },
+            {
+                "source": "MongoQuoteRepository",
+                "target": "MongoOperationsWithRetry",
+                "method": {
+                    "findAndRemove [overloaded_#0044]": 1,
+                    "findOne [overloaded_#0031]": 50,
+                    "save [overloaded_#0052]": 12,
+                    "findAll [overloaded_#0017]": 2
+                },
+                "value": 5.174
+            },
+            {
+                "source": "MongoQuoteRepository",
+                "target": "QuoteDetails",
+                "method": {
+                    "toQuote": 55,
+                    "QuoteDetails [overloaded_#002]": 12,
+                    "getId": 12,
+                    "setId": 12,
+                    "getCustomerName": 17
+                },
+                "value": 5.682
+            },
+            {
+                "source": "MongoQuoteRepository",
+                "target": "Quote [Duplicate_#001]",
+                "method": {
+                    "setQuoteId": 12,
+                    "getDealerName": 12
+                },
+                "value": 4.178
+            },
+            {
+                "source": "MongoQuoteRepository",
+                "target": "MongoDealersRepository",
+                "method": {
+                    "getDealer": 12
+                },
+                "value": 3.484
+            },
+            {
+                "source": "QuoteDetails",
+                "target": "Quote [Duplicate_#001]",
+                "method": {
+                    "Quote [overloaded_#001]": 55,
+                    "setQuoteId": 55,
+                    "setValidUntil": 55,
+                    "setCustomerName": 55,
+                    "setDealerName": 55,
+                    "setTotalCost": 55,
+                    "setDiscount": 55,
+                    "setCity": 55,
+                    "setPostalCode": 55,
+                    "setState": 55,
+                    "addQuoteItem": 138,
+                    "getQuoteId": 12,
+                    "getValidUntil": 12,
+                    "getCustomerName": 12,
+                    "getDealerName": 12,
+                    "getTotalCost": 12,
+                    "getDiscount": 12,
+                    "getCity": 12,
+                    "getPostalCode": 12,
+                    "getState": 12,
+                    "getQuoteItems": 12
+                },
+                "value": 7.694
+            },
+            {
+                "source": "QuoteDetails",
+                "target": "QuoteItemInfo [Duplicate_#001]",
+                "method": {
+                    "getSkuNumber": 138,
+                    "getAmount": 138
+                },
+                "value": 6.62
+            },
+            {
+                "source": "Quote [Duplicate_#001]",
+                "target": "QuoteItemInfo [Duplicate_#001]",
+                "method": {
+                    "QuoteItemInfo [overloaded_#002]": 138
+                },
+                "value": 5.927
+            },
+            {
+                "source": "Quote [Duplicate_#001]",
+                "target": "Utility",
+                "method": {
+                    "validateStringField": 24
+                },
+                "value": 4.178
+            },
+            {
+                "source": "OrderController",
+                "target": "RepositoryFactory",
+                "method": {
+                    "getOrderRepository": 47,
+                    "getQuoteRepository": 2
+                },
+                "value": 4.891
+            },
+            {
+                "source": "OrderController",
+                "target": "MongoOrderRepository",
+                "method": {
+                    "hasOrder": 8,
+                    "updateOrder [overloaded_#002]": 8,
+                    "getOrder": 14,
+                    "getOrdersByStatus": 3,
+                    "updateOrder [overloaded_#001]": 12,
+                    "createOrder": 2
+                },
+                "value": 4.85
+            },
+            {
+                "source": "OrderController",
+                "target": "OrderUpdateInfo",
+                "method": {
+                    "getEventInfo": 8
+                },
+                "value": 3.079
+            },
+            {
+                "source": "OrderController",
+                "target": "OrderEventInfo",
+                "method": {
+                    "setDate": 8
+                },
+                "value": 3.079
+            },
+            {
+                "source": "OrderController",
+                "target": "Order [Duplicate_#001]",
+                "method": {
+                    "validate": 12
+                },
+                "value": 3.484
+            },
+            {
+                "source": "OrderController",
+                "target": "MongoQuoteRepository",
+                "method": {
+                    "getQuote": 2
+                },
+                "value": 1.693
+            },
+            {
+                "source": "MongoOrderRepository",
+                "target": "MongoOperationsWithRetry",
+                "method": {
+                    "exists [overloaded_#0034]": 8,
+                    "findOne [overloaded_#0031]": 37,
+                    "save [overloaded_#0052]": 20,
+                    "findAll [overloaded_#0017]": 5
+                },
+                "value": 5.248
+            },
+            {
+                "source": "MongoOrderRepository",
+                "target": "OrderDetails",
+                "method": {
+                    "toOrder": 58,
+                    "OrderDetails [overloaded_#002]": 20,
+                    "getId": 20,
+                    "setId": 20
+                },
+                "value": 5.77
+            },
+            {
+                "source": "MongoOrderRepository",
+                "target": "OrderUpdateInfo",
+                "method": {
+                    "getEventInfo": 8,
+                    "getStatus": 8
+                },
+                "value": 3.772
+            },
+            {
+                "source": "MongoOrderRepository",
+                "target": "Order [Duplicate_#001]",
+                "method": {
+                    "addEvent": 8,
+                    "setStatus": 8,
+                    "setOrderId": 20,
+                    "getOrderId": 2
+                },
+                "value": 4.637
+            },
+            {
+                "source": "MongoOrderRepository",
+                "target": "MongoQuoteRepository",
+                "method": {
+                    "getQuote": 2
+                },
+                "value": 1.693
+            },
+            {
+                "source": "MongoOrderRepository",
+                "target": "BadRequestException",
+                "method": {
+                    "BadRequestException": 2
+                },
+                "value": 1.693
+            },
+            {
+                "source": "MongoOrderRepository",
+                "target": "ConflictingRequestException",
+                "method": {
+                    "ConflictingRequestException": 2
+                },
+                "value": 1.693
+            },
+            {
+                "source": "OrderDetails",
+                "target": "Order [Duplicate_#001]",
+                "method": {
+                    "Order": 58,
+                    "setOrderId": 58,
+                    "setQuoteId": 58,
+                    "setStatus": 58,
+                    "setOrderDate": 58,
+                    "addEvent": 137,
+                    "getOrderId": 20,
+                    "getQuoteId": 20,
+                    "getOrderDate": 20,
+                    "getStatus": 20,
+                    "getEvents": 20
+                },
+                "value": 7.267
+            },
+            {
+                "source": "Order [Duplicate_#001]",
+                "target": "Utility",
+                "method": {
+                    "validateStringField": 24
+                },
+                "value": 4.178
+            },
+            {
+                "source": "CatalogController",
+                "target": "RepositoryFactory",
+                "method": {
+                    "getCatalogItemsRepository": 10
+                },
+                "value": 3.302
+            },
+            {
+                "source": "CatalogController",
+                "target": "MongoCatalogItemsRepository",
+                "method": {
+                    "getCatalogItems": 6,
+                    "removeCatalogItem": 2,
+                    "getCatalogItem": 1,
+                    "upsertCatalogItem": 1
+                },
+                "value": 3.302
+            },
+            {
+                "source": "CatalogController",
+                "target": "CatalogItem [Duplicate_#001]",
+                "method": {
+                    "validate": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "MongoCatalogItemsRepository",
+                "target": "MongoOperationsWithRetry",
+                "method": {
+                    "findAll [overloaded_#0017]": 6,
+                    "findAndRemove [overloaded_#0044]": 2,
+                    "findOne [overloaded_#0031]": 2,
+                    "save [overloaded_#0052]": 1
+                },
+                "value": 3.397
+            },
+            {
+                "source": "MongoCatalogItemsRepository",
+                "target": "CatalogItem [Duplicate_#002]",
+                "method": {
+                    "toCatalogItem": 325,
+                    "CatalogItem [overloaded_#002]": 1,
+                    "getId": 1,
+                    "setId": 1
+                },
+                "value": 6.793
+            },
+            {
+                "source": "CatalogItem [Duplicate_#002]",
+                "target": "CatalogItem [Duplicate_#001]",
+                "method": {
+                    "CatalogItem [overloaded_#001]": 325,
+                    "setSkuNumber": 325,
+                    "setDescription": 325,
+                    "setPrice": 325,
+                    "setInventory": 325,
+                    "setLeadTime": 325,
+                    "getSkuNumber": 1,
+                    "getDescription": 1,
+                    "getPrice": 1,
+                    "getInventory": 1,
+                    "getLeadTime": 1
+                },
+                "value": 8.578
+            },
+            {
+                "source": "CatalogItem [Duplicate_#001]",
+                "target": "Utility",
+                "method": {
+                    "validateStringField": 2
+                },
+                "value": 1.693
+            },
+            {
+                "source": "ShipmentRecord [Duplicate_#001]",
+                "target": "DeliveryAddress [Duplicate_#001]",
+                "method": {
+                    "validate": 5
+                },
+                "value": 2.609
+            },
+            {
+                "source": "ShipmentController",
+                "target": "ShipmentRecord [Duplicate_#001]",
+                "method": {
+                    "validate": 5,
+                    "getOrderId": 6
+                },
+                "value": 3.397
+            },
+            {
+                "source": "ShipmentController",
+                "target": "RepositoryFactory",
+                "method": {
+                    "getShipmentRepository": 11
+                },
+                "value": 3.397
+            },
+            {
+                "source": "ShipmentController",
+                "target": "MongoShipmentRepository",
+                "method": {
+                    "getShipmentById": 5,
+                    "updateShipment": 1,
+                    "getShipments": 2,
+                    "removeShipment": 2,
+                    "createShipment": 1
+                },
+                "value": 3.397
+            },
+            {
+                "source": "ShipmentController",
+                "target": "OrderingInitializer",
+                "method": {
+                    "getApplicationPath": 1
+                },
+                "value": 1.0
+            },
+            {
+                "source": "MongoShipmentRepository",
+                "target": "MongoOperationsWithRetry",
+                "method": {
+                    "findOne [overloaded_#0031]": 7,
+                    "save [overloaded_#0052]": 1,
+                    "find [overloaded_#0036]": 2,
+                    "findAndRemove [overloaded_#0044]": 2,
+                    "insert [overloaded_#0048]": 1
+                },
+                "value": 3.564
+            },
+            {
+                "source": "MongoShipmentRepository",
+                "target": "ShipmentDetails",
+                "method": {
+                    "toShipmentRecord": 13,
+                    "ShipmentDetails [overloaded_#002]": 2,
+                    "getId": 1,
+                    "setId": 1
+                },
+                "value": 3.833
+            },
+            {
+                "source": "MongoShipmentRepository",
+                "target": "ShipmentRecord [Duplicate_#001]",
+                "method": {
+                    "getOrderId": 3,
+                    "ShipmentRecord [overloaded_#004]": 1
+                },
+                "value": 2.386
+            },
+            {
+                "source": "MongoShipmentRepository",
+                "target": "MongoOrderRepository",
+                "method": {
+                    "getOrdersByStatus": 2,
+                    "getOrder": 1
+                },
+                "value": 2.098
+            },
+            {
+                "source": "MongoShipmentRepository",
+                "target": "Order [Duplicate_#001]",
+                "method": {
+                    "getOrderId": 14
+                },
+                "value": 3.639
+            },
+            {
+                "source": "ShipmentDetails",
+                "target": "ShipmentRecord [Duplicate_#001]",
+                "method": {
+                    "ShipmentRecord [overloaded_#003]": 13,
+                    "setOrderId": 13,
+                    "setDeliveryAddress": 13,
+                    "setPrimaryContactPhone": 13,
+                    "setContactName": 13,
+                    "setAlternateContactPhone": 13,
+                    "getOrderId": 2,
+                    "getEvents": 6,
+                    "getDeliveryAddress": 2,
+                    "getContactName": 2,
+                    "getPrimaryContactPhone": 2,
+                    "getAlternateContactPhone": 2,
+                    "addEvent [overloaded_#001]": 8
+                },
+                "value": 5.624
+            }
+        ],
+        "overview": {
+            "nodes": [
+                {
+                    "name": "partition0",
+                    "group": 0,
+                    "category": "partition0",
+                    "filepath": "Cluster",
+                    "semantics": [
+                        "dealers-view",
+                        "dealers-save-info",
+                        "quotes-delete-quote",
+                        "Unknown",
+                        "quotes-create-quote",
+                        "quotes-create-order",
+                        "orders-view",
+                        "orders-change-order",
+                        "orders-manage-extras-on-order",
+                        "orders-view-change-order",
+                        "orders-create-delivery",
+                        "deliveries-change-order-info",
+                        "delivery-change-dealer-info",
+                        "delivery-change-item-info",
+                        "delivery-delete-delivery",
+                        "deliveries-view",
+                        "catalog-add-item",
+                        "orders-order-manage-event",
+                        "deliveries-change-delivery-info",
+                        "catalog-delete-item",
+                        "dealers-change-contact-info",
+                        "quotes-view",
+                        "orders-update-item-info",
+                        "deliveries-order-manage-events",
+                        "catalog-view",
+                        "dealers-add-dealer",
+                        "quotes-add",
+                        "dealers-delete-dealer",
+                        "orders-change-dealer-info",
+                        "deliveries-delivery-manage-events",
+                        "catalog-change-item",
+                        "quotes-change-quote"
+                    ]
+                },
+                {
+                    "name": "partition3",
+                    "group": 1,
+                    "category": "partition3",
+                    "filepath": "Cluster",
+                    "semantics": [
+                        "orders-change-order",
+                        "orders-view",
+                        "deliveries-change-order-info",
+                        "delivery-change-item-info",
+                        "orders-view-change-order",
+                        "delivery-change-dealer-info",
+                        "deliveries-view",
+                        "orders-create-delivery",
+                        "orders-update-item-info",
+                        "orders-change-dealer-info",
+                        "deliveries-change-delivery-info",
+                        "delivery-delete-delivery",
+                        "Unknown",
+                        "quotes-create-order"
+                    ]
+                },
+                {
+                    "name": "partition4",
+                    "group": 2,
+                    "category": "partition4",
+                    "filepath": "Cluster",
+                    "semantics": [
+                        "orders-manage-extras-on-order",
+                        "catalog-delete-item",
+                        "deliveries-order-manage-events",
+                        "catalog-view",
+                        "orders-order-manage-event",
+                        "deliveries-delivery-manage-events",
+                        "catalog-change-item",
+                        "catalog-add-item"
+                    ]
+                },
+                {
+                    "name": "partition2",
+                    "group": 3,
+                    "category": "partition2",
+                    "filepath": "Cluster",
+                    "semantics": [
+                        "delivery-change-dealer-info",
+                        "delivery-delete-delivery",
+                        "deliveries-view",
+                        "deliveries-change-order-info",
+                        "delivery-change-item-info",
+                        "orders-create-delivery",
+                        "deliveries-change-delivery-info"
+                    ]
+                },
+                {
+                    "name": "partition1",
+                    "group": 4,
+                    "category": "partition1",
+                    "filepath": "Cluster",
+                    "semantics": [
+                        "quotes-create-order",
+                        "dealers-add-dealer",
+                        "deliveries-change-delivery-info"
+                    ]
+                },
+                {
+                    "name": "Unobserved",
+                    "group": 5,
+                    "category": "Unobserved",
+                    "filepath": "Cluster",
+                    "semantics": []
+                }
+            ],
+            "links": [
+                {
+                    "source": "partition0",
+                    "target": "partition3",
+                    "value": 2.406
+                },
+                {
+                    "source": "partition0",
+                    "target": "partition4",
+                    "value": 2.07
+                },
+                {
+                    "source": "partition0",
+                    "target": "partition2",
+                    "value": 2.486
+                },
+                {
+                    "source": "partition0",
+                    "target": "partition1",
+                    "value": 1.0
+                },
+                {
+                    "source": "partition3",
+                    "target": "partition0",
+                    "value": 2.051
+                },
+                {
+                    "source": "partition3",
+                    "target": "partition1",
+                    "value": 1.356
+                },
+                {
+                    "source": "partition4",
+                    "target": "partition0",
+                    "value": 1.702
+                },
+                {
+                    "source": "partition2",
+                    "target": "partition0",
+                    "value": 1.624
+                },
+                {
+                    "source": "partition2",
+                    "target": "partition1",
+                    "value": 1.0
+                },
+                {
+                    "source": "partition2",
+                    "target": "partition3",
+                    "value": 1.547
+                }
+            ]
+        }
+    }
+}

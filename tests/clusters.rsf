@@ -1,7 +1,6 @@
-contain 0 catalogcontroller
-contain 0 catalogitem
-contain 1 orderitem
-contain 1 ordercontroller
-contain 1 shippingmodel
-contain 1 shippingcontroller
-contain 1 utility
+contain partition0 c1
+contain partition0 c2
+contain partition0 c3
+contain partition1 a1
+contain partition1 a2
+contain partition1 a3
